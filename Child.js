@@ -1,16 +1,11 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { Component } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
-import Comp from "./Comp";
-import Child from "./Child";
 
-export default class App extends React.Component {
+export default class Child extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Comp />
-        <Child />
-        <StatusBar style="auto" />
+        <Text>Hello World</Text>
       </View>
     );
   }
